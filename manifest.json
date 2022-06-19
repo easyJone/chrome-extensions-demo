@@ -1,0 +1,27 @@
+{
+  "name": "插件学习01",
+  "description": "chrome插件学习",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "defualt_icon": {
+      "16": "/img/get_started16.png",
+      "32": "/img/get_started32.png",
+      "48": "/img/get_started48.png",
+      "128": "/img/get_started128.png"
+    },
+    "default_title": "悬浮提示"
+  },
+  "icons": {
+    "16": "/img/get_started16.png",
+    "32": "/img/get_started32.png",
+    "48": "/img/get_started48.png",
+    "128": "/img/get_started128.png"
+  },
+  "options_page": "options.html"
+}
